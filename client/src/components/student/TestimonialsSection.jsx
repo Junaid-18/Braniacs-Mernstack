@@ -1,5 +1,8 @@
 import React from 'react';
 import { assets, dummyTestimonial } from '../../assets/assets';
+import umair from '../../assets/umair.jpg'
+import junaid from '../../assets/junaid.jpg'
+import safwan from '../../assets/safwan.jpg'
 
 const TestimonialsSection = () => {
 
@@ -40,6 +43,28 @@ const TestimonialsSection = () => {
             </a>
           </div>
         ))}
+      </div>
+            <div className='pt-14 px-8' >
+        <h1 className='text-3xl font-medium text-gray-800' >Creators</h1>
+        <p className="md:text-base text-gray-500 mt-3">
+        Meet the Creators of the Brainiacs LMS System. Master Minds behind this Miracle
+        </p>
+
+        <div className='flex flex-row gap-12 justify-center items-center pt-14' >
+          <div>
+            <img className='w-32 h-32 rounded-full mx-auto mb-4 object-cover' src={umair} alt="umair" />
+            <p class="text-gray-700 max-w-xs">Muhammad Umair — Registration number: <br /> 22-NTU-CS-1211</p>
+          </div>
+                  <div>
+            <img className='w-32 h-32 rounded-full mx-auto mb-4 object-cover' src={junaid} alt="umair" />
+            <p class="text-gray-700 max-w-xs">Muhammad Junaid — Registration number: <br /> 22-NTU-CS-1200</p>
+          </div>
+                  <div>
+            <img className='w-32 h-32 rounded-full mx-auto mb-4 object-cover' src={safwan} alt="umair" />
+            <p class="text-gray-700 max-w-xs">Muhammad Safwan — Registration number: <br /> 22-NTU-CS-1207</p>
+          </div>
+        </div>
+
       </div>
     </div>
   );
